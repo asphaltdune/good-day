@@ -15,8 +15,8 @@ function timeDay() {
 	const date = new Date();
 	const time = date.toLocaleTimeString("en-GB");
 	if (time > "06:00:00" && time < "12:00:00") {return "morning ";} 
-	else if (time >= "12:00:00" && time < "17:00:00") {return "afternoon ";} 
-	else if (time >= "17:00:00" && time < "22:00:00") {return "evening ";} 
+	else if (time >= "12:00:00" && time < "19:00:00") {return "afternoon ";} 
+	else if (time >= "19:00:00" && time < "22:00:00") {return "evening ";} 
 	else if (time >= "22:00:00" && time < "23:59:59") {return "night ";} 
 	else {return "";}
 }
